@@ -1,0 +1,35 @@
+[user]
+	name = Matias Doyle
+	email = hello@matiasdoyle.com
+[github]
+	user = matiasdoyle
+	token = 8ac31897db128c8e9fafb26346e44012
+[core]
+	quotepath = false
+	excludesfile = ~/.gitignore_global
+	ignorecase = false
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[color]
+	tatus = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	ui = true
+[alias]
+	st = status
+	d = difftool
+	ch = checkout
+	com = commit
+	br = branch
+	l = log --oneline --decorate --graph
+	timeline = log --graph --branches --pretty=oneline --decorate
+	fixup = commit --amend -C HEAD
+	ls-ignored = ls-files --exclude-standard --ignored --others
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix
