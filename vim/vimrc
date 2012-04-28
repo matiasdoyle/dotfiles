@@ -1,0 +1,74 @@
+" Make vim more useful
+set nocompatible
+
+" Load pathogen
+call pathogen#infect()
+
+" Enhance command-line completion
+set wildmenu
+
+" Use UTF-8 without byte order mark (BOM)
+set encoding=utf-8 nobomb
+
+" Enable syntax highlighting
+syntax enable
+
+" Enable line numbers
+set number
+
+" Highlight current line
+set cursorline
+
+" Show the cursor position
+set ruler
+
+" Solarized dark syntax highlighting
+let g:solarized_termcolors=16
+let g:solarized_visibility="low"
+set background=dark
+colorscheme solarized
+
+" Make tabs two spaces and spaces instead of tabs
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Show “invisible” characters
+set lcs=trail:·,eol:¬,nbsp:_
+set list
+
+" Always show status line
+"set laststatus=2
+
+" Disable the audio bell
+set noerrorbells visualbell t_vb=
+
+if has("autocmd")
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
+" GUI options
+if has("gui_running")
+	" Hide the menubar in MacVim
+	set guioptions=-t
+
+	" Show aqua style tabs
+	set guioptions+=e
+
+	" Set height of the window
+	set lines=50
+
+	" Set width of the window
+	set columns=135
+
+	" Set font (Warning: have to install font first)
+	set guifont=Meslo\ LG\ M\ DZ:h12
+endif
+
+" Enable the ftplugin
+filetype plugin indent on
+
+" NERDTree options
+
+" Show bookmarks at startup
+let NERDTreeShowBookmarks=1
