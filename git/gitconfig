@@ -21,7 +21,7 @@
 	interactive = auto
 	ui = true
 [alias]
-	st = status
+	st = status -s
 	d = difftool
 	ch = checkout
 	com = commit
