@@ -15,7 +15,7 @@
 [diff]
 	tool = Kaleidoscope
 [color]
-	tatus = auto
+	status = auto
 	diff = auto
 	branch = auto
 	interactive = auto
