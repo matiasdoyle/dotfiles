@@ -34,8 +34,8 @@ set shiftwidth=2
 set expandtab
 
 " Show “invisible” characters
-set lcs=trail:·,eol:¬,nbsp:_
-set list
+"set lcs=trail:·,eol:¬,nbsp:_
+"set list
 
 " Always show status line
 "set laststatus=2
