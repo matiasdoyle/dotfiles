@@ -22,7 +22,8 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		".gitkeep"
+		".gitkeep",
+		".#*"
 	],
 	"folder_exclude_patterns":
 	[
