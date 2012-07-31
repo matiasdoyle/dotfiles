@@ -28,7 +28,7 @@
 	br = branch
 	l = log --oneline --decorate --graph
 	timeline = log --graph --branches --pretty=oneline --decorate
-	fixup = commit --amend -C HEAD
+	fix = commit --amend -C HEAD
 	ls-ignored = ls-files --exclude-standard --ignored --others
 [apply]
 	# Detect whitespace errors when applying a patch
