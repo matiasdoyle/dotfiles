@@ -24,7 +24,6 @@ set ruler
 
 " Solarized dark syntax highlighting
 let g:solarized_termcolors=16
-let g:solarized_visibility="low"
 set background=dark
 colorscheme solarized
 
