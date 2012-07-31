@@ -33,10 +33,8 @@
 		"CVS",
 		"node_modules"
 	],
-	"font_face": "Meslo LG S DZ",
+	"font_face": "Meslo LG M DZ",
 	"font_size": 12.0,
-	"word_wrap": "auto",
-	"wrap_width": 100,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -46,5 +44,7 @@
 	"theme": "Soda Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"vintage_start_in_command_mode": true,
-	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
+	"word_wrap": "auto",
+	"wrap_width": 100
 }
