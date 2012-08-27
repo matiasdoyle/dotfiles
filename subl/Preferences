@@ -46,5 +46,6 @@
 	"vintage_start_in_command_mode": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "auto",
-	"wrap_width": 100
+	"wrap_width": 100,
+	"rulers": [100]
 }
