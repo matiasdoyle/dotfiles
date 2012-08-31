@@ -13,8 +13,8 @@ set encoding=utf-8 nobomb
 " Enable syntax highlighting
 syntax enable
 
-" Enable line numbers
-set number
+" Enable relative line numbers
+set relativenumber
 
 " Highlight current line
 set cursorline
