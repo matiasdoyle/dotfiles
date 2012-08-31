@@ -25,7 +25,7 @@ set ruler
 " Solarized dark syntax highlighting
 "let g:solarized_termcolors=16
 "set background=dark
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night 
 
 " Make tabs two spaces and spaces instead of tabs
 set tabstop=2
@@ -61,11 +61,29 @@ if has("gui_running")
 	set columns=135
 
 	" Set font (Warning: have to install font first)
-	set guifont=Meslo\ LG\ M\ DZ:h12
+	set guifont=Meslo\ LG\ M\ DZ:h14
 endif
 
 " Enable the ftplugin
 filetype plugin indent on
+
+" Remap arrow keys to nothing
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
+" Overwride F1 help
+nnoremap <F1> <ESC>
+inoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" Simplenote settings
+source ~/.vim-cred/.simplenote
 
 " NERDTree options
 
