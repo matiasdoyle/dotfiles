@@ -37,7 +37,7 @@ set expandtab
 "set list
 
 " Always show status line
-"set laststatus=2
+set laststatus=2
 
 " Disable the audio bell
 set noerrorbells visualbell t_vb=
