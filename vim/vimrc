@@ -23,9 +23,9 @@ set cursorline
 set ruler
 
 " Solarized dark syntax highlighting
-let g:solarized_termcolors=16
-set background=dark
-colorscheme solarized
+"let g:solarized_termcolors=16
+"set background=dark
+colorscheme Tomorrow-Night
 
 " Make tabs two spaces and spaces instead of tabs
 set tabstop=2
