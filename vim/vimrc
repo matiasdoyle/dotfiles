@@ -61,29 +61,29 @@ if has("gui_running")
 	set columns=135
 
 	" Set font (Warning: have to install font first)
-	set guifont=Meslo\ LG\ M\ DZ:h14
+	" set guifont=Meslo\ LG\ M\ DZ:h13
 endif
 
 " Enable the ftplugin
 filetype plugin indent on
 
 " Remap arrow keys to nothing
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"nnoremap <left> <nop>
+"nnoremap <right> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
+
+" Open in Marked.app
+:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
 
 " Overwride F1 help
 nnoremap <F1> <ESC>
 inoremap <F1> <ESC>
 vnoremap <F1> <ESC>
-
-" Simplenote settings
-source ~/.vim-cred/.simplenote
 
 " NERDTree options
 
