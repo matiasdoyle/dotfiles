@@ -1,15 +1,12 @@
 [user]
 	name = Matias Doyle
 	email = hello@matiasdoyle.com
-[github]
-	user = matiasdoyle
-	token = 8ac31897db128c8e9fafb26346e44012
 [core]
 	quotepath = false
 	excludesfile = ~/.gitignore_global
 	ignorecase = false
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
 [diff]
@@ -29,7 +26,16 @@
 	l = log --oneline --decorate --graph
 	timeline = log --graph --branches --pretty=oneline --decorate
 	fix = commit --amend -C HEAD
-	ls-ignored = ls-files --exclude-standard --ignored --others
+  ls-ignored = ls-files --exclude-standard --ignored --others
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope
+[push]
+	default = simple
