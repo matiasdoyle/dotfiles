@@ -1,2 +1,9 @@
 # OS X
 .DS_Store
+
+# CVS
+CVS/*
+.cvsignore
+
+# Node
+node_modules/*
