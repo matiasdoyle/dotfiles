@@ -56,8 +56,9 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Screens
 #
 
-# Save screenshots to the desktop
-# defaults write com.apple.screencapture location -string "$HOME/Desktop"
+# Save screenshots to ~/Screenshots
+mkdir ~/Screenshots
+defaults write com.apple.screencapture location -string "$HOME/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string "png"
@@ -161,4 +162,4 @@ defaults write com.apple.dock wvous-bl-corner -int 4
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 echo "OS X end."
-echo "You should log out and in again now."
+echo "Log out and in again to let changes take effect."
