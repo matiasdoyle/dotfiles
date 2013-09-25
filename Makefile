@@ -1,3 +1,5 @@
+action=open
+
 default:
 	@echo "Hello you, I am a little blocker so you don't do anything too stupid. Since "
 	@echo "running all targets accidentally might have unwanted consequences."
@@ -5,6 +7,8 @@ default:
 
 all: mac brew git ssh subl vim zsh
 
+apps:
+	@./mac/apps.sh $(action);
 brew:
 	@./brew/index.sh;
 git:
