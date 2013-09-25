@@ -1,0 +1,19 @@
+#
+# Personal hosts
+#
+Host ralphy
+	HostName 82.196.10.90
+	User matiasdoyle
+
+#
+# sympho.me
+#
+Host sympho
+	HostName 185.14.185.18
+	User matiasdoyle
+Host sympho-blog
+	HostName 198.211.115.214
+	User matiasdoyle
+Host sympho-git
+	HostName 37.139.18.176
+	User matiasdoyle
