@@ -1,0 +1,31 @@
+#
+# Path to your oh-my-zsh configuration.
+#
+ZSH=$HOME/.oh-my-zsh
+
+#
+# Set theme
+#
+ZSH_THEME="mh"
+
+#
+# Load plugins
+#
+plugins=(git node osx)
+
+#
+# Init oh-my-zsh
+#
+source $ZSH/oh-my-zsh.sh
+
+#
+# Set PATH
+#
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/sbin
+
+#
+# Aliases
+#
+alias l="ls -la"
+alias todo="git grep --color=always --no-index --exclude-standard --heading --break --ignore-case -e ' FIX: *' -e ' TODO: *' | sed -e 's/^[[:space:]]*//'"
+alias gitst="git st"
