@@ -3,8 +3,10 @@ default:
 	@echo "running all targets accidentally might have unwanted consequences."
 	@echo "\nIf you want to run all targets run: make all"
 
-all: git mac ssh subl vim zsh
+all: mac brew git ssh subl vim zsh
 
+brew:
+	@./brew/index.sh;
 git:
 	@./git/index.sh;
 mac:
@@ -18,4 +20,4 @@ vim:
 zsh:
 	@./zsh/index.sh;
 
-.PHONY: default all git mac ssh subl vim zsh
+.PHONY: default all brew git mac ssh subl vim zsh
