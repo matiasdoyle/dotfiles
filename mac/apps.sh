@@ -22,19 +22,19 @@ open_dl() {
 }
 
 expand_dl() {
-  dir=~/Downloads/tmp
+  dir=~/Downloads
 
-  if ls -U ${dir}/*.zip &> /dev/null;
+  if ls -U $dir/*.zip &> /dev/null;
   then
-    for zip in ${dir}/*.zip
+    for zip in $dir/*.zip
     do
       unzip "${zip}" -d /Applications/
     done
   fi
 
-  if ls -U ${dir}/.dmg &> /dev/null;
+  if ls -U $dir/.dmg &> /dev/null;
   then
-    for dmg in ~/Downloads/tmp/*.dmg
+    for dmg in $dir/*.dmg
     do
       echo "Mounting dmg: ${dmg}"
       volume=`hdiutil attach "${dmg}" | tail -n1 | perl -nle '/(\/Volumes\/.+)/; print $1'`
