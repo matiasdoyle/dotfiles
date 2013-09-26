@@ -5,7 +5,7 @@ echo "# Homebrew #"
 # Check if Homebrew is installed
 #
 
-if ! command -v "foo" >/dev/null 2>&1
+if ! command -v "brew" >/dev/null 2>&1
 then
   echo "Homebrew not installed. Please install Homebrew first from http://brew.sh/"
   exit 1
