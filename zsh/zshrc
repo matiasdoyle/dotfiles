@@ -30,3 +30,11 @@ alias l="ls -la"
 alias todo="git grep --color=always --no-index --exclude-standard --heading --break --ignore-case -e ' FIX: *' -e ' TODO: *' | sed -e 's/^[[:space:]]*//'"
 alias gitst="git st"
 alias marked="open -a Marked"
+
+# Activate Python virtualenv.
+#
+#   Usage: activate_env <name>
+#
+activate_env() {
+  source ~/env/$1/bin/activate
+}
