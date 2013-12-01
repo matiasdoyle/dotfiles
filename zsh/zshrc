@@ -29,3 +29,4 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/share/
 alias l="ls -la"
 alias todo="git grep --color=always --no-index --exclude-standard --heading --break --ignore-case -e ' FIX: *' -e ' TODO: *' | sed -e 's/^[[:space:]]*//'"
 alias gitst="git st"
+alias marked="open -a Marked"
